@@ -1,0 +1,8 @@
+---
+
+prom2teams_required_libs:
+  - python3
+  - python3-pip
+  - net-tools
+
+prom2teams_webhook_url: http://test_uri

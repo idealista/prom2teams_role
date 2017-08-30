@@ -1,0 +1,17 @@
+---
+
+- name: prom2teams | Ensure prom2teams directories structure
+  file:
+    path: "{{ item }}"
+    state: directory
+    owner: "{{ prom2teams_user }}"
+    group: "{{ prom2teams_group }}"
+  with_items:
+    - "{{ prom2teams_config_folder }}"
+    - "{{ prom2teams_logs_folder }}"
+
+- name: prom2teams | Copy prom2teams configuration
+  template:
+    src: "config.ini.j2"
+    dest: "{{ prom2teams_config_folder }}/config.ini"
+    mode: 0644

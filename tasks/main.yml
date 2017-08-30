@@ -1,0 +1,16 @@
+---
+
+- name: prom2teams | Install
+  include: install.yml
+  tags:
+    - install
+
+- name: prom2teams | Config
+  include: config.yml
+  tags:
+    - config
+
+- name: prom2teams | Service
+  include: service.yml
+  tags:
+    - service

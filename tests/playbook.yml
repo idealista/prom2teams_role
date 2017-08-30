@@ -1,0 +1,5 @@
+---
+
+- hosts: prom2teams.vm
+  roles:
+    - role: prom2teams-role

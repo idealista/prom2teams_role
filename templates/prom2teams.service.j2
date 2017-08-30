@@ -1,0 +1,14 @@
+[Unit]
+Description=prom2teams daemon
+After=syslog.target network.target
+Before=httpd.service
+
+[Service]
+User={{ prom2teams_user }}
+Group={{ prom2teams_group }}
+RuntimeDirectory=prom2teams
+PIDFile={{ prom2teams_pid_absolute_path }}
+ExecStart=/usr/local/bin/prom2teams -l {{ prom2teams_logs_absolute_path }} -v {{ prom2teams_logs_level }} -c {{ prom2teams_config_absolute_path }}
+
+[Install]
+WantedBy=multi-user.target

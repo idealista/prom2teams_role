@@ -1,0 +1,8 @@
+---
+
+- name: prom2teams | Configuring service
+  systemd:
+    name: prom2teams
+    state: "{{ prom2teams_service_state }}"
+    enabled: "{{ prom2teams_service_enabled }}"
+    daemon_reload: yes

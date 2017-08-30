@@ -1,0 +1,29 @@
+---
+
+## General
+prom2teams_version: 1.1.2
+prom2teams_required_libs:
+  - python3
+  - python3-pip
+
+# Owner
+prom2teams_user: prom2teams
+prom2teams_group: prom2teams
+
+## Service options
+prom2teams_service_state: started
+prom2teams_service_enabled: True
+
+# Files & Paths
+prom2teams_config_folder: /opt/prom2teams
+prom2teams_config_absolute_path: "{{ prom2teams_config_folder }}/config.ini"
+
+prom2teams_logs_folder: /var/log/prom2teams
+prom2teams_logs_level: INFO
+prom2teams_logs_absolute_path: "{{ prom2teams_logs_folder }}/prom2teams.log"
+
+prom2teams_pid_absolute_path: /var/run/prom2teams/prom2teams.pid
+
+## prom2teams configuration
+prom2teams_host: 0.0.0.0
+prom2teams_port: 8089

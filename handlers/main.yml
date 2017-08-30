@@ -1,0 +1,7 @@
+---
+# handlers file for prom2teams-role
+
+- name: restart prom2teams
+  systemd:
+    name: prom2teams
+    state: restarted
