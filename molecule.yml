@@ -73,8 +73,6 @@ docker:
       dockerfile: tests/Dockerfile
       image: debian9-testinfra
       image_version: latest
-      port_bindings:
-        8089: 8089
       privileged: True
       cap_add:
         - SYS_ADMIN
