@@ -1,0 +1,13 @@
+{{ prom2teams_logs_folder }}/uwsgi.log {
+    daily
+    missingok
+    rotate 7
+    size 200M
+    compress
+    notifempty
+    create 644 {{ prom2teams_user }} {{ prom2teams_port }}
+    sharedscripts
+    postrotate
+        [ -f /run/prom2teams/prom2teams.pid ] && systemctl restart prom2teams_uwsgi
+    endscript
+}

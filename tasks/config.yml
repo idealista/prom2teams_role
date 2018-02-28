@@ -10,8 +10,38 @@
     - "{{ prom2teams_config_folder }}"
     - "{{ prom2teams_logs_folder }}"
 
-- name: prom2teams | Copy prom2teams configuration
+- name: prom2teams | Copy prom2teams ini configuration
   template:
-    src: "config.ini.j2"
-    dest: "{{ prom2teams_config_folder }}/config.ini"
+    src: "prom2teams.ini.j2"
+    dest: "{{ prom2teams_config_folder }}/prom2teams.ini"
+    mode: 0640
+    owner: "{{ prom2teams_user }}"
+    group: "{{ prom2teams_group }}"
+  notify: restart prom2teams
+
+- name: prom2teams | Copy prom2teams env configuration
+  template:
+    src: "prom2teams.j2"
+    dest: "{{ prom2teams_config_folder }}/prom2teams"
+    mode: 0640
+    owner: "{{ prom2teams_user }}"
+    group: "{{ prom2teams_group }}"
+  notify: restart prom2teams
+
+- name: prom2teams | Copy prom2teams uwsgi configuration
+  template:
+    src: "uwsgi.ini.j2"
+    dest: "{{ prom2teams_config_folder }}/uwsgi.ini"
+    mode: 0640
+    owner: "{{ prom2teams_user }}"
+    group: "{{ prom2teams_group }}"
+  notify: restart prom2teams
+
+- name: prom2teams | Copy logrotate config
+  template:
+    src: "{{ prom2teams_logrotate_template_path }}"
+    dest: /etc/logrotate.d/prom2teams
     mode: 0644
+    owner: root
+    group: root
+  when: prom2teams_logrotate_enabled

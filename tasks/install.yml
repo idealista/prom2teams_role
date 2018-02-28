@@ -28,3 +28,4 @@
     src: "prom2teams.service.j2"
     dest: /lib/systemd/system/prom2teams.service
     mode: 0644
+  notify: restart prom2teams
