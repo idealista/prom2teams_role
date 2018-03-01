@@ -41,3 +41,8 @@ service:
 port:
   tcp:{{ prom2teams_port }}:
     listening: true
+
+http:
+  http://{{ prom2teams_host }}:{{ prom2teams_port }}:
+    status: 200
+    timeout: 1000

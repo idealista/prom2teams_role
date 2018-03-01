@@ -37,6 +37,13 @@
     group: "{{ prom2teams_group }}"
   notify: restart prom2teams
 
+- name: prom2teams | Copy wsgi.py app runnable
+  copy:
+    src: wsgi.py
+    dest: "{{ prom2teams_uwsgi_runnable_path }}"
+    owner: "{{ prom2teams_user }}"
+    group: "{{ prom2teams_group }}"
+
 - name: prom2teams | Copy logrotate config
   template:
     src: "{{ prom2teams_logrotate_template_path }}"

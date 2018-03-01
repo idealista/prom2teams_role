@@ -5,9 +5,9 @@
     size 200M
     compress
     notifempty
-    create 644 {{ prom2teams_user }} {{ prom2teams_port }}
+    create 644 {{ prom2teams_user }} {{ prom2teams_group }}
     sharedscripts
     postrotate
-        [ -f /run/prom2teams/prom2teams.pid ] && systemctl restart prom2teams_uwsgi
+        [ -f /var/run/prom2teams/prom2teams.pid ] && systemctl restart prom2teams
     endscript
 }

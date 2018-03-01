@@ -35,6 +35,7 @@ prom2teams_port: 8089
 ## UWSGI
 prom2teams_uwsgi_processes: 5
 prom2teams_uwsgi_threads: 2
+prom2teams_uwsgi_runnable_path: "{{ prom2teams_config_folder }}"
 
 ## Environment
 prom2teams_environment: pro # (pre|pro|)

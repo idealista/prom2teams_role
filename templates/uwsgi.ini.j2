@@ -15,3 +15,6 @@ threads = {{ prom2teams_uwsgi_threads }}
 uid = {{ prom2teams_user }}
 gid = {{ prom2teams_group }}
 daemonize = {{ prom2teams_logs_folder }}/uwsgi.log
+logfile-chmod = 644
+chdir = {{ prom2teams_uwsgi_runnable_path }}
+module = wsgi

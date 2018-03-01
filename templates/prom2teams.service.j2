@@ -10,7 +10,7 @@ Group={{ prom2teams_group }}
 RuntimeDirectory=prom2teams
 PIDFile={{ prom2teams_pid_file }}
 EnvironmentFile={{ prom2teams_config_environment_file }}
-ExecStart=/usr/local/bin/prom2teams_uwsgi {{ prom2teams_config_service_file }}
+ExecStart=/bin/sh -c "`which uwsgi` {{ prom2teams_config_service_file }}"
 ExecStop=/bin/kill -s QUIT $MAINPID
 
 [Install]
