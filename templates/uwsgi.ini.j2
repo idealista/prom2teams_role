@@ -4,7 +4,7 @@ master = true
 processes = {{ prom2teams_uwsgi_processes }}
 {% if prom2teams_socket == "file" %}
 socket = /run/prom2teams/prom2teams.sock
-chmod-socket = 666
+chmod-socket = 777
 vacuum = true
 {% else %}
 socket = {{ prom2teams_host }}:{{ prom2teams_port }}
