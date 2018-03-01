@@ -62,7 +62,15 @@ Use in a playbook:
 
 ## Usage
 
-Look to the defaults properties file to see the possible configuration properties.
+Look to the [defaults](defaults/main.yml) properties file to see the possible configuration properties.
+
+Mandatory property is `prom2teams_webhook_urls`. For example:
+
+```
+prom2teams_webhook_urls:
+  connector1: http://test
+  connector2: http://test2
+```
 
 ## Testing
 
