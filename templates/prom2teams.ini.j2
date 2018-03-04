@@ -1,12 +1,13 @@
 # {{ ansible_managed }}
 [Microsoft Teams]
 {% for name, webhook in prom2teams_webhook_urls.iteritems() %}
-{{ name }}:{{ webhook }}
+{{ name }}: {{ webhook }}
 {% endfor %}
 
 [HTTP Server]
 Host: {{ prom2teams_host }}
 Port: {{ prom2teams_port }}
+Name: {{ prom2teams_name }}
 
 [Log]
 Level: {{ prom2teams_logs_level }}
