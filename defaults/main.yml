@@ -30,6 +30,7 @@ prom2teams_pid_file: /var/run/prom2teams/prom2teams.pid
 prom2teams_socket: file # file | http
 prom2teams_host: 0.0.0.0
 prom2teams_port: 8089
+prom2teams_name: "{{ ansible_hostname }}"
 #prom2teams_template_path: # Define if needed
 
 ## UWSGI
