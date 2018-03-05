@@ -1,7 +1,7 @@
 ---
 
 ## General
-prom2teams_version: 1.3.0
+prom2teams_version: 2.0.0
 prom2teams_required_libs:
   - python3
   - python3-pip
@@ -15,15 +15,37 @@ prom2teams_service_state: started
 prom2teams_service_enabled: True
 
 # Files & Paths
-prom2teams_config_folder: /opt/prom2teams
-prom2teams_config_absolute_path: "{{ prom2teams_config_folder }}/config.ini"
+prom2teams_config_folder: /etc/prom2teams
+prom2teams_config_service_file: "{{ prom2teams_config_folder }}/uwsgi.ini"
+prom2teams_config_file: "{{ prom2teams_config_folder }}/prom2teams.ini"
+prom2teams_config_environment_file: "{{ prom2teams_config_folder }}/prom2teams"
 
 prom2teams_logs_folder: /var/log/prom2teams
 prom2teams_logs_level: INFO
 prom2teams_logs_absolute_path: "{{ prom2teams_logs_folder }}/prom2teams.log"
 
-prom2teams_pid_absolute_path: /var/run/prom2teams/prom2teams.pid
+prom2teams_pid_file: /var/run/prom2teams/prom2teams.pid
 
 ## prom2teams configuration
+prom2teams_socket: file # file | http
 prom2teams_host: 0.0.0.0
 prom2teams_port: 8089
+prom2teams_name: "{{ ansible_hostname }}"
+#prom2teams_template_path: # Define if needed
+
+## UWSGI
+prom2teams_uwsgi_processes: 5
+prom2teams_uwsgi_threads: 2
+prom2teams_uwsgi_runnable_path: "{{ prom2teams_config_folder }}"
+
+## Environment
+prom2teams_environment: pro # (pre|pro|)
+
+## Logrotate
+prom2teams_logrotate_enabled: true
+prom2teams_logrotate_template_path: templates/logrotate.j2 # This picks the one in the role
+
+## Webhooks
+#prom2teams_webhook_urls:
+#  connector1: http://test
+#  connector2: http://test2
