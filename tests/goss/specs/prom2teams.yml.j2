@@ -1,0 +1,48 @@
+group:
+  {{ prom2teams_group }}:
+    exists: true
+
+user:
+  {{ prom2teams_user }}:
+    exists: true
+    groups:
+      - {{ prom2teams_group }}
+
+file:
+  {{ prom2teams_config_folder }}:
+    owner: {{ prom2teams_user }}
+    group: {{ prom2teams_group }}
+    exists: true
+    filetype: directory
+  {{ prom2teams_logs_folder }}:
+    owner: {{ prom2teams_user }}
+    group: {{ prom2teams_group }}
+    exists: true
+    filetype: directory
+  /run/prom2teams:
+    owner: {{ prom2teams_user }}
+    group: {{ prom2teams_group }}
+    exists: true
+    filetype: directory
+  /lib/systemd/system/prom2teams.service:
+    exists: true
+
+command:
+  /usr/bin/pip3 show prom2teams | grep Version:
+    exit-status: 0
+    stdout:
+      - "Version: {{ prom2teams_version }}"
+
+service:
+  prom2teams:
+    enabled: true
+    running: true
+
+port:
+  tcp:{{ prom2teams_port }}:
+    listening: true
+
+http:
+  http://{{ prom2teams_host }}:{{ prom2teams_port }}:
+    status: 200
+    timeout: 1000

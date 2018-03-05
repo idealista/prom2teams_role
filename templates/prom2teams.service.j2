@@ -4,11 +4,14 @@ After=syslog.target network.target
 Before=httpd.service
 
 [Service]
+Type=forking
 User={{ prom2teams_user }}
 Group={{ prom2teams_group }}
 RuntimeDirectory=prom2teams
-PIDFile={{ prom2teams_pid_absolute_path }}
-ExecStart=/usr/local/bin/prom2teams -l {{ prom2teams_logs_absolute_path }} -v {{ prom2teams_logs_level }} -c {{ prom2teams_config_absolute_path }}
+PIDFile={{ prom2teams_pid_file }}
+EnvironmentFile={{ prom2teams_config_environment_file }}
+ExecStart=/bin/sh -c "`which uwsgi` {{ prom2teams_config_service_file }}"
+ExecStop=/bin/kill -s QUIT $MAINPID
 
 [Install]
 WantedBy=multi-user.target
