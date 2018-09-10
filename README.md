@@ -2,7 +2,7 @@
 
 # prom2teams Ansible role
 
-This ansible role installs prom2teams in a debian environment.
+This Ansible role installs prom2teams in a Debian environment.
 
 - [Getting Started](#getting-started)
 	- [Prerequisities](#prerequisities)
@@ -21,7 +21,7 @@ These instructions will get you a copy of the role for your ansible playbook. On
 
 ### Prerequisities
 
-Ansible 2.2.1.0 version installed.
+Ansible 2.4.0.0 version installed.
 Inventory destination should be a Debian environment.
 
 For testing purposes, [Molecule](https://molecule.readthedocs.io/) with [Vagrant](https://www.vagrantup.com/) as driver (with [landrush](https://github.com/vagrant-landrush/landrush) plugin) and [VirtualBox](https://www.virtualbox.org/) as provider.
@@ -41,6 +41,8 @@ or using [Ansible Galaxy](https://galaxy.ansible.com/idealista/prom2teams-role/)
 
 ```
 - src: idealista.prom2teams-role
+  version: 1.0.0
+  name: prom2teams
 ```
 
 Install the role with ansible-galaxy command:
@@ -68,11 +70,11 @@ Look to the defaults properties file to see the possible configuration propertie
 molecule test --platform=Debian9
 ```
 
-See molecule.yml to check possible testing platforms.
+See `molecule.yml` to check possible testing platforms.
 
 ## Built With
 
-![Ansible](https://img.shields.io/badge/ansible-2.2.1.0-green.svg)
+![Ansible](https://img.shields.io/badge/ansible-2.4.0.0-green.svg)
 
 ## Versioning
 
@@ -88,9 +90,9 @@ See also the list of [contributors](https://github.com/idealista/prom2teams-role
 
 ## License
 
-![Apache 2.0 Licence](https://img.shields.io/hexpm/l/plug.svg)
+![Apache 2.0 License](https://img.shields.io/hexpm/l/plug.svg)
 
-This project is licensed under the [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) license - see the [LICENSE.txt](LICENSE.txt) file for details.
+This project is licensed under the [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) license - see the [LICENSE](LICENSE) file for details.
 
 ## Contributing
 
