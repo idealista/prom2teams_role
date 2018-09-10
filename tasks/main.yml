@@ -1,16 +1,19 @@
 ---
 
 - name: prom2teams | Install
-  include: install.yml
+  import_tasks: install.yml
   tags:
+    - prom2teams_install
     - install
 
 - name: prom2teams | Config
-  include: config.yml
+  import_tasks: config.yml
   tags:
+    - prom2teams_config
     - config
 
 - name: prom2teams | Service
-  include: service.yml
+  import_tasks: service.yml
   tags:
+    - prom2teams_service
     - service
