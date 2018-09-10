@@ -13,7 +13,7 @@ prom2teams_group: prom2teams
 prom2teams_service_state: started
 prom2teams_service_enabled: True
 
-# Files & Paths
+# prom2teams Files & Paths
 prom2teams_config_folder: /opt/prom2teams
 prom2teams_config_absolute_path: "{{ prom2teams_config_folder }}/config.ini"
 
@@ -22,6 +22,10 @@ prom2teams_logs_level: INFO
 prom2teams_logs_absolute_path: "{{ prom2teams_logs_folder }}/prom2teams.log"
 
 prom2teams_pid_absolute_path: /var/run/prom2teams/prom2teams.pid
+
+# Templates paths
+prom2teams_config_template_path: "config.ini.j2"
+prom2teams_service_template_path: "prom2teams.service.j2"
 
 ## prom2teams configuration
 prom2teams_host: 0.0.0.0

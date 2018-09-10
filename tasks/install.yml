@@ -25,6 +25,6 @@
 
 - name: prom2teams | Copy Daemon script
   template:
-    src: "prom2teams.service.j2"
+    src: "{{ prom2teams_service_template_path }}"
     dest: /lib/systemd/system/prom2teams.service
     mode: 0644

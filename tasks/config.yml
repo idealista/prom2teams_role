@@ -12,6 +12,6 @@
 
 - name: prom2teams | Copy prom2teams configuration
   template:
-    src: "config.ini.j2"
+    src: "{{ prom2teams_config_template_path }}"
     dest: "{{ prom2teams_config_folder }}/config.ini"
     mode: 0644
