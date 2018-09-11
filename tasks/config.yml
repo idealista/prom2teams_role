@@ -12,7 +12,7 @@
 
 - name: prom2teams | Copy prom2teams ini configuration
   template:
-    src: "prom2teams.ini.j2"
+    src: "{{ prom2teams_ini_template_path }}"
     dest: "{{ prom2teams_config_folder }}/prom2teams.ini"
     mode: 0640
     owner: "{{ prom2teams_user }}"
@@ -21,7 +21,7 @@
 
 - name: prom2teams | Copy prom2teams env configuration
   template:
-    src: "prom2teams.j2"
+    src: "{{ prom2teams_config_environment_template_path }}"
     dest: "{{ prom2teams_config_folder }}/prom2teams"
     mode: 0640
     owner: "{{ prom2teams_user }}"
@@ -30,7 +30,7 @@
 
 - name: prom2teams | Copy prom2teams uwsgi configuration
   template:
-    src: "uwsgi.ini.j2"
+    src: "{{ prom2teams_config_uwsgi_template_path }}"
     dest: "{{ prom2teams_config_folder }}/uwsgi.ini"
     mode: 0640
     owner: "{{ prom2teams_user }}"
@@ -39,7 +39,7 @@
 
 - name: prom2teams | Copy wsgi.py app runnable
   copy:
-    src: wsgi.py
+    src: "{{ prom2teams_wsgi_app_file_path }}"
     dest: "{{ prom2teams_uwsgi_runnable_path }}"
     owner: "{{ prom2teams_user }}"
     group: "{{ prom2teams_group }}"

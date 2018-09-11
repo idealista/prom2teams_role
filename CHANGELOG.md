@@ -3,6 +3,9 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/) and [Keep a changelog](https://github.com/olivierlacan/keep-a-changelog).
 
 ## [Unreleased](https://github.com/idealista/prom2teams-role/tree/develop)
+- *Update prom2teams version to 2.2.0* @jnogol
+- *[#9](https://github.com/idealista/prom2teams-role/issues/9) Ability of providing templates via playbook* @jnogol
+- *Update `.travis.yml` to test Ansible 2.4.x and 2.5.0.0* @jnogol
 
 ## [1.3.0](https://github.com/idealista/prom2teams-role/tree/1.3.0)
 [Full Changelog](https://github.com/idealista/prom2teams-role/compare/1.2.0...1.3.0)
@@ -16,7 +19,6 @@ This project adheres to [Semantic Versioning](http://semver.org/) and [Keep a ch
 ## [1.1.0](https://github.com/idealista/prom2teams-role/tree/1.1.0)
 ### Changed
 - *Update prom2teams version* @jnogol
-
 
 ## [1.0.0](https://github.com/idealista/prom2teams-role/tree/1.0.0)
 ### Added

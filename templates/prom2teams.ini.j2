@@ -17,3 +17,8 @@ Path: {{ prom2teams_logs_absolute_path }}
 [Template]
 Path: {{ prom2teams_template_path }} # default: app resources template
 {% endif %}
+
+{% if prom2teams_groupalertsby is defined %}
+[Group Alerts]
+Field: {{ prom2teams_groupalertsby }}
+{% endif %}
