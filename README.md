@@ -4,7 +4,7 @@
 
 # prom2teams Ansible role
 
-This ansible role installs prom2teams in a debian environment.
+This Ansible role installs prom2teams in a Debian environment.
 
 - [Getting Started](#getting-started)
 	- [Prerequisities](#prerequisities)
@@ -43,6 +43,8 @@ or using [Ansible Galaxy](https://galaxy.ansible.com/idealista/prom2teams-role/)
 
 ```
 - src: idealista.prom2teams-role
+  version: 1.0.0
+  name: prom2teams
 ```
 
 Install the role with ansible-galaxy command:
@@ -78,7 +80,7 @@ prom2teams_webhook_urls:
 molecule test --platform=Debian9
 ```
 
-See molecule.yml to check possible testing platforms.
+See `molecule.yml` to check possible testing platforms.
 
 ## Built With
 
@@ -98,9 +100,9 @@ See also the list of [contributors](https://github.com/idealista/prom2teams-role
 
 ## License
 
-![Apache 2.0 Licence](https://img.shields.io/hexpm/l/plug.svg)
+![Apache 2.0 License](https://img.shields.io/hexpm/l/plug.svg)
 
-This project is licensed under the [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) license - see the [LICENSE.txt](LICENSE.txt) file for details.
+This project is licensed under the [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) license - see the [LICENSE](LICENSE) file for details.
 
 ## Contributing
 

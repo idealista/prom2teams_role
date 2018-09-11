@@ -14,3 +14,5 @@ prom2teams_host: "{{ ansible_eth0.ipv4.address }}"
 # Use this one for testing purposes
 #prom2teams_host: "{{ ansible_eth1.ipv4.address }}"
 prom2teams_port: 8001
+
+prom2teams_groupalertsby: name
