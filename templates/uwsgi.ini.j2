@@ -1,0 +1,20 @@
+# {{ ansible_managed }}
+[uwsgi]
+master = true
+processes = {{ prom2teams_uwsgi_processes }}
+{% if prom2teams_socket == "file" %}
+socket = /run/prom2teams/prom2teams.sock
+chmod-socket = 777
+vacuum = true
+{% else %}
+socket = {{ prom2teams_host }}:{{ prom2teams_port }}
+protocol = http
+{% endif %}
+pidfile = {{ prom2teams_pid_file }}
+threads = {{ prom2teams_uwsgi_threads }}
+uid = {{ prom2teams_user }}
+gid = {{ prom2teams_group }}
+daemonize = {{ prom2teams_logs_folder }}/uwsgi.log
+logfile-chmod = 644
+chdir = {{ prom2teams_uwsgi_runnable_path }}
+module = wsgi

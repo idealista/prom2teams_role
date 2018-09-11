@@ -5,4 +5,14 @@ prom2teams_required_libs:
   - python3-pip
   - net-tools
 
-prom2teams_webhook_url: http://test_uri
+prom2teams_webhook_urls:
+  connector1: http://test
+  connector2: http://test2
+
+prom2teams_socket: http
+prom2teams_host: "{{ ansible_eth0.ipv4.address }}"
+# Use this one for testing purposes
+#prom2teams_host: "{{ ansible_eth1.ipv4.address }}"
+prom2teams_port: 8001
+
+prom2teams_groupalertsby: name

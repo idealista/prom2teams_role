@@ -1,5 +1,7 @@
 ![Logo](https://raw.githubusercontent.com/idealista/prom2teams-role/master/logo.gif)
 
+[![Build Status](https://travis-ci.org/idealista/prom2teams-role.png)](https://travis-ci.org/idealista/prom2teams-role)
+
 # prom2teams Ansible role
 
 This Ansible role installs prom2teams in a Debian environment.
@@ -21,7 +23,7 @@ These instructions will get you a copy of the role for your ansible playbook. On
 
 ### Prerequisities
 
-Ansible 2.4.0.0 version installed.
+Ansible 2.4.1.0 version installed.
 Inventory destination should be a Debian environment.
 
 For testing purposes, [Molecule](https://molecule.readthedocs.io/) with [Vagrant](https://www.vagrantup.com/) as driver (with [landrush](https://github.com/vagrant-landrush/landrush) plugin) and [VirtualBox](https://www.virtualbox.org/) as provider.
@@ -62,7 +64,15 @@ Use in a playbook:
 
 ## Usage
 
-Look to the defaults properties file to see the possible configuration properties.
+Look to the [defaults](defaults/main.yml) properties file to see the possible configuration properties.
+
+Mandatory property is `prom2teams_webhook_urls`. For example:
+
+```
+prom2teams_webhook_urls:
+  connector1: http://test
+  connector2: http://test2
+```
 
 ## Testing
 
@@ -74,7 +84,7 @@ See `molecule.yml` to check possible testing platforms.
 
 ## Built With
 
-![Ansible](https://img.shields.io/badge/ansible-2.4.0.0-green.svg)
+![Ansible](https://img.shields.io/badge/ansible-2.4.1.0-green.svg)
 
 ## Versioning
 
@@ -96,4 +106,4 @@ This project is licensed under the [Apache 2.0](https://www.apache.org/licenses/
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](.github/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.

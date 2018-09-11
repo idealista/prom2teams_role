@@ -7,6 +7,11 @@ This project adheres to [Semantic Versioning](http://semver.org/) and [Keep a ch
 - *[#9](https://github.com/idealista/prom2teams-role/issues/9) Ability of providing templates via playbook* @jnogol
 - *Update `.travis.yml` to test Ansible 2.4.x and 2.5.0.0* @jnogol
 
+## [1.3.0](https://github.com/idealista/prom2teams-role/tree/1.3.0)
+[Full Changelog](https://github.com/idealista/prom2teams-role/compare/1.2.0...1.3.0)
+### Changed
+- *[#5](https://github.com/idealista/prom2teams-role/issues/5) Run service using uwsgi* @jmonterrubio
+
 ## [1.2.0](https://github.com/idealista/prom2teams-role/tree/1.2.0)
 ### Changed
 - *Update prom2teams version* @jnogol

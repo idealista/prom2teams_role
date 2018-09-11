@@ -28,3 +28,4 @@
     src: "{{ prom2teams_service_template_path }}"
     dest: /lib/systemd/system/prom2teams.service
     mode: 0644
+  notify: restart prom2teams
