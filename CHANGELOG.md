@@ -5,6 +5,7 @@ This project adheres to [Semantic Versioning](http://semver.org/) and [Keep a ch
 ## [Unreleased](https://github.com/idealista/prom2teams-role/tree/develop)
 ### Changed
 - *Update prom2teams version to 2.2.2* @jnogol
+- *Notify handler when installing task changed* @jnogol
 
 ## [2.0.0](https://github.com/idealista/prom2teams-role/tree/2.0.0)
 [Full Changelog](https://github.com/idealista/prom2teams-role/compare/1.3.0...2.0.0)
