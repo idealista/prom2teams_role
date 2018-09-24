@@ -3,6 +3,9 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/) and [Keep a changelog](https://github.com/olivierlacan/keep-a-changelog).
 
 ## [Unreleased](https://github.com/idealista/prom2teams-role/tree/develop)
+### Changed
+- *Update prom2teams version to 2.2.2* @jnogol
+- *Notify handler when installing task changed* @jnogol
 
 ## [2.0.0](https://github.com/idealista/prom2teams-role/tree/2.0.0)
 [Full Changelog](https://github.com/idealista/prom2teams-role/compare/1.3.0...2.0.0)
@@ -19,10 +22,12 @@ This project adheres to [Semantic Versioning](http://semver.org/) and [Keep a ch
 - *[#5](https://github.com/idealista/prom2teams-role/issues/5) Run service using uwsgi* @jmonterrubio
 
 ## [1.2.0](https://github.com/idealista/prom2teams-role/tree/1.2.0)
+[Full Changelog](https://github.com/idealista/prom2teams-role/compare/1.1.0...1.2.0)
 ### Changed
 - *Update prom2teams version* @jnogol
 
 ## [1.1.0](https://github.com/idealista/prom2teams-role/tree/1.1.0)
+[Full Changelog](https://github.com/idealista/prom2teams-role/compare/1.0.0...1.1.0)
 ### Changed
 - *Update prom2teams version* @jnogol
 
