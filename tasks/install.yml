@@ -22,6 +22,7 @@
     name: prom2teams
     version: "{{ prom2teams_version }}"
     executable: pip3
+  notify: restart prom2teams
 
 - name: prom2teams | Copy Daemon script
   template:
