@@ -3,6 +3,9 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/) and [Keep a changelog](https://github.com/olivierlacan/keep-a-changelog).
 
 ## [Unreleased](https://github.com/idealista/prom2teams-role/tree/develop)
+
+## [2.1.0](https://github.com/idealista/prom2teams-role/tree/2.1.0)
+[Full Changelog](https://github.com/idealista/prom2teams-role/compare/2.0.1...2.1.0)
 ### Changed
 - *Update prom2teams version to 2.3.0* @dortegau
 
