@@ -22,3 +22,8 @@ Path: {{ prom2teams_template_path }} # default: app resources template
 [Group Alerts]
 Field: {{ prom2teams_groupalertsby }}
 {% endif %}
+
+{% if prom2teams_ignored_extra_labels is defined %}
+[Labels]
+Excluded: {{ prom2teams_ignored_extra_labels|join(', ') }}
+{% endif %}
