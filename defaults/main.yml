@@ -1,6 +1,6 @@
 ---
 ## General
-prom2teams_version: 2.3.0
+prom2teams_version: 2.3.1
 prom2teams_required_libs:
   - python3
   - python3-pip
