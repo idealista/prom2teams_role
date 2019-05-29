@@ -1,6 +1,6 @@
 ---
 language: python
-python: "3.6"
+python: "2.7.13"
 group: deprecated-2017Q4
 
 sudo: required
