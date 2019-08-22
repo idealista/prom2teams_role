@@ -2,3 +2,6 @@
 # Prom2Teams Environment
 APP_ENVIRONMENT={{ prom2teams_environment }}
 APP_CONFIG_FILE={{ prom2teams_config_file }}
+{% if prom2teams_prometheus_metrics %}
+PROM2TEAMS_PROMETHEUS_METRICS=true
+{% endif %}
