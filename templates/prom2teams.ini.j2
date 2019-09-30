@@ -1,6 +1,6 @@
 # {{ ansible_managed }}
 [Microsoft Teams]
-{% for name, webhook in prom2teams_webhook_urls.iteritems() %}
+{% for name, webhook in prom2teams_webhook_urls.items() %}
 {{ name }}: {{ webhook }}
 {% endfor %}
 
