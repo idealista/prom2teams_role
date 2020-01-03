@@ -11,6 +11,7 @@ install:
 env:
   matrix:
     - DOCKER_BASE_IMAGE=debian:stretch-slim
+    - DOCKER_BASE_IMAGE=debian:buster-slim
 script:
   - export DOCKER_BASE_IMAGE=${DOCKER_BASE_IMAGE}
   - pipenv run molecule test
