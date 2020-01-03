@@ -11,7 +11,7 @@ platforms:
   - name: prom2teams
     groups:
       - prom2teams
-    image: ${MOLECULE_DISTRO:-debian:stretch-slim}
+    image: ${DOCKER_BASE_IMAGE:-debian:buster-slim}
     privileged: false
     capabilities:
       - SYS_ADMIN
