@@ -1,6 +1,6 @@
-![Logo](https://raw.githubusercontent.com/idealista/prom2teams-role/master/logo.gif)
+![Logo](https://raw.githubusercontent.com/idealista/prom2teams_role/master/logo.gif)
 
-[![Build Status](https://travis-ci.org/idealista/prom2teams-role.png)](https://travis-ci.org/idealista/prom2teams-role)
+[![Build Status](https://travis-ci.org/idealista/prom2teams_role.png)](https://travis-ci.org/idealista/prom2teams_role)
 
 # prom2teams Ansible role
 
@@ -33,16 +33,16 @@ For testing purposes, [Molecule](https://molecule.readthedocs.io/) with [Vagrant
 Create or add to your roles dependency file (e.g requirements.yml) from GitHub:
 
 ```
-- src: http://github.com/idealista/prom2teams-role.git
+- src: http://github.com/idealista/prom2teams_role.git
   scm: git
   version: 1.0.0
   name: prom2teams
 ```
 
-or using [Ansible Galaxy](https://galaxy.ansible.com/idealista/prom2teams-role/) as origin if you prefer:
+or using [Ansible Galaxy](https://galaxy.ansible.com/idealista/prom2teams_role/) as origin if you prefer:
 
 ```
-- src: idealista.prom2teams-role
+- src: idealista.prom2teams_role
   version: 1.0.0
   name: prom2teams
 ```
@@ -88,7 +88,7 @@ See `molecule.yml` to check possible testing platforms.
 
 ## Versioning
 
-For the versions available, see the [tags on this repository](https://github.com/idealista/prom2teams-role/tags).
+For the versions available, see the [tags on this repository](https://github.com/idealista/prom2teams_role/tags).
 
 Additionaly you can see what change in each version in the [CHANGELOG.md](CHANGELOG.md) file.
 
@@ -96,7 +96,7 @@ Additionaly you can see what change in each version in the [CHANGELOG.md](CHANGE
 
 * **Idealista** - *Work with* - [idealista](https://github.com/idealista)
 
-See also the list of [contributors](https://github.com/idealista/prom2teams-role/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/idealista/prom2teams_role/contributors) who participated in this project.
 
 ## License
 
