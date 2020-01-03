@@ -5,6 +5,9 @@ This project adheres to [Semantic Versioning](http://semver.org/) and [Keep a ch
 ## [Unreleased](https://github.com/idealista/prom2teams_role/tree/develop)
 ### Fixed
 - *Update prom2teams.ini template for python3 compatibility* @miguel-chacon
+### Added
+- *[#22](https://github.com/idealista/prom2teams_role/issues/22) Renamed role* @frantsao
+- *[#22](https://github.com/idealista/prom2teams_role/issues/22) Updated molecule and travis testing; switched to docker* @frantsao
 
 ## [2.3.0](https://github.com/idealista/prom2teams_role/tree/2.3.0)
 [Full Changelog](https://github.com/idealista/prom2teams_role/compare/2.2.0...2.3.0)
