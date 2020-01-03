@@ -1,5 +1,0 @@
----
-
-- hosts: prom2teams
-  roles:
-    - role: prom2teams_role
