@@ -1,5 +1,5 @@
 ---
-# handlers file for prom2teams-role
+# handlers file for prom2teams_role
 
 - name: restart prom2teams
   systemd:
