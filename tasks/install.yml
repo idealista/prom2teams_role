@@ -12,10 +12,9 @@
 
 - name: prom2teams | Installing dependencies
   apt:
-    pkg: "{{ item }}"
+    pkg: "{{ prom2teams_required_libs }}"
     state: present
     update_cache: yes
-  with_items: "{{ prom2teams_required_libs }}"
 
 - name: prom2teams | Installing prom2teams
   pip:

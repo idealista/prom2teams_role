@@ -1,30 +1,20 @@
 ---
+dist: xenial
 language: python
-python: "2.7.13"
-group: deprecated-2017Q4
-
+python: "3.7"
 sudo: required
-group: deprecated-2017Q4
-
-env:
-  - ansible_version: 2.4.0.0
-  - ansible_version: 2.4.1.0
-  - ansible_version: 2.4.2.0
-  - ansible_version: 2.4.3.0
-  - ansible_version: 2.5.0.0
-  - ansible_version: 2.8.0.0
-
 services:
   - docker
-
 install:
-  - pip install ansible==${ansible_version}
-  - pip install molecule==1.25.0
-  - pip install ansible-lint==3.4.20
-  - pip install testinfra==1.7.1
-  - pip install docker
+  - pip install pipenv
+  - pipenv sync
+env:
+  matrix:
+    - DOCKER_BASE_IMAGE=debian:stretch-slim
+    - DOCKER_BASE_IMAGE=debian:buster-slim
 script:
-  - molecule test --driver docker
+  - export DOCKER_BASE_IMAGE=${DOCKER_BASE_IMAGE}
+  - pipenv run molecule test
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
