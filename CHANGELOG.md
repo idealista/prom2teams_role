@@ -4,6 +4,11 @@ This project adheres to [Semantic Versioning](http://semver.org/) and [Keep a ch
 
 ## [Unreleased](https://github.com/idealista/prom2teams_role/tree/develop)
 
+## [2.4.1](https://github.com/idealista/prom2teams_role/tree/2.4.1)
+[Full Changelog](https://github.com/idealista/prom2teams_role/compare/2.4.0...2.4.1)
+### Changed
+- *Update prom2teams default version to 2.5.4* @frantsao
+
 ## [2.4.0](https://github.com/idealista/prom2teams_role/tree/2.4.0)
 [Full Changelog](https://github.com/idealista/prom2teams_role/compare/2.3.0...2.4.0)
 ### Fixed
