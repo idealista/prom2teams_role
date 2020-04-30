@@ -16,6 +16,12 @@
     state: present
     update_cache: yes
 
+- name: prom2teams | Installing required pip packages
+  pip:
+    name: "{{ prom2teams_required_pip_packages }}"
+    executable: pip3
+  notify: restart prom2teams
+
 - name: prom2teams | Installing prom2teams
   pip:
     name: prom2teams
