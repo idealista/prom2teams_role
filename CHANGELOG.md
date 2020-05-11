@@ -3,6 +3,9 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/) and [Keep a changelog](https://github.com/olivierlacan/keep-a-changelog).
 
 ## [Unreleased](https://github.com/idealista/prom2teams_role/tree/develop)
+
+## [2.4.2](https://github.com/idealista/prom2teams_role/tree/2.4.2)
+[Full Changelog](https://github.com/idealista/prom2teams_role/compare/2.4.1...2.4.2)
 ### Fixed
 - *[#27](https://github.com/idealista/prom2teams_role/issues/27) Workaround for pip 9.x issue* @frantsao
 ### Changed
