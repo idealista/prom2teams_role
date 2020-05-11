@@ -4,6 +4,14 @@ This project adheres to [Semantic Versioning](http://semver.org/) and [Keep a ch
 
 ## [Unreleased](https://github.com/idealista/prom2teams_role/tree/develop)
 
+## [2.4.2](https://github.com/idealista/prom2teams_role/tree/2.4.2)
+[Full Changelog](https://github.com/idealista/prom2teams_role/compare/2.4.1...2.4.2)
+### Fixed
+- *[#27](https://github.com/idealista/prom2teams_role/issues/27) Workaround for pip 9.x issue* @frantsao
+### Changed
+- *[#27](https://github.com/idealista/prom2teams_role/issues/27) Update defaults in order to install prom2teams 2.5.5* @frantsao
+- *Upgraded to molecule 3.0.4 and goss 0.3.10* @frantsao
+
 ## [2.4.1](https://github.com/idealista/prom2teams_role/tree/2.4.1)
 [Full Changelog](https://github.com/idealista/prom2teams_role/compare/2.4.0...2.4.1)
 ### Changed

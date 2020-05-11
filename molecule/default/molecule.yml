@@ -3,10 +3,9 @@ dependency:
   name: galaxy
 driver:
   name: docker
-lint:
-  name: yamllint
-  options:
-    config-file: .yamllint
+lint: |
+  yamllint .
+  ansible-lint .
 platforms:
   - name: prom2teams
     groups:
@@ -24,12 +23,8 @@ platforms:
     stop_signal: 'RTMIN+3'
 provisioner:
   name: ansible
-  lint:
-    name: ansible-lint
 scenario:
   name: default
 verifier:
-  name: goss
-  lint:
-    name: yamllint
-    enabled: false
+  name: ansible
+  directory: ./tests

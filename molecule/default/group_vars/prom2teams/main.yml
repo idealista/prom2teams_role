@@ -2,7 +2,9 @@
 prom2teams_user: prom2teams
 prom2teams_group: prom2teams
 prom2teams_config_folder: /etc/prom2teams
-prom2teams_version: 2.5.4
+prom2teams_version: 2.5.5
+prom2teams_required_pip_packages:
+  - zipp==1.2.0
 prom2teams_logs_folder: /var/log/prom2teams
 
 prom2teams_required_libs:
