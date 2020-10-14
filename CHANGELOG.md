@@ -4,6 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/) and [Keep a ch
 
 ## [Unreleased](https://github.com/idealista/prom2teams_role/tree/develop)
 
+- *[#30](https://github.com/idealista/prom2teams_role/issues/30) Update prom2teams version to 2.7.0* @dortegau
+
 ## [2.4.2](https://github.com/idealista/prom2teams_role/tree/2.4.2)
 [Full Changelog](https://github.com/idealista/prom2teams_role/compare/2.4.1...2.4.2)
 ### Fixed
