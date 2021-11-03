@@ -24,4 +24,3 @@ notifications:
     on_failure: always
     recipients:
       - desarrollo.benders@idealista.com
-
