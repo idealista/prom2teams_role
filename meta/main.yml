@@ -1,5 +1,7 @@
 ---
 galaxy_info:
+  role_name: prom2teams_roles
+  namespace: idealista
   company: Idealista S.A.
   author: Idealista S.A.
   description: prom2teams role
