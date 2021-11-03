@@ -5,7 +5,9 @@ This project adheres to [Semantic Versioning](http://semver.org/) and [Keep a ch
 ## [Unreleased](https://github.com/idealista/prom2teams_role/tree/develop)
 ### Fixed
 - *[#30](https://github.com/idealista/prom2teams_role/issues/30) Updated prom2teams default version to the latest release supported in Debian Etch, fixed dependencies* @frantsao
+### Changed
 - *[#30](https://github.com/idealista/prom2teams_role/issues/30) Updated test dependencies (ansible, molecule, goss)* @frantsao
+- *Set Debian Buster for default testing image (Stretch is being deprecated)* @frantsao
 
 ## [2.4.2](https://github.com/idealista/prom2teams_role/tree/2.4.2)
 [Full Changelog](https://github.com/idealista/prom2teams_role/compare/2.4.1...2.4.2)
