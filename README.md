@@ -35,7 +35,7 @@ Create or add to your roles dependency file (e.g requirements.yml) from GitHub:
 ```
 - src: http://github.com/idealista/prom2teams_role.git
   scm: git
-  version: 2.4.0
+  version: 3.0.0
   name: prom2teams
 ```
 
@@ -43,7 +43,7 @@ or using [Ansible Galaxy](https://galaxy.ansible.com/idealista/prom2teams_role/)
 
 ```
 - src: idealista.prom2teams_role
-  version: 2.4.0
+  version: 3.0.0
   name: prom2teams
 ```
 

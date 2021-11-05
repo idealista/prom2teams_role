@@ -3,6 +3,9 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/) and [Keep a changelog](https://github.com/olivierlacan/keep-a-changelog).
 
 ## [Unreleased](https://github.com/idealista/prom2teams_role/tree/develop)
+
+## [3.0.0](https://github.com/idealista/prom2teams_role/tree/3.0.0)
+[Full Changelog](https://github.com/idealista/prom2teams_role/compare/2.4.2...3.0.0)
 ### Fixed
 - *[#30](https://github.com/idealista/prom2teams_role/issues/30) Updated prom2teams default version to the latest release supported in Debian Etch, fixed dependencies* @frantsao
 ### Changed
