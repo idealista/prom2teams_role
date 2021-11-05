@@ -23,10 +23,10 @@ These instructions will get you a copy of the role for your ansible playbook. On
 
 ### Prerequisities
 
-Ansible 2.9.x.x version installed.
+Ansible >=2.9 version installed.
 Inventory destination should be a Debian environment.
 
-For testing purposes, [Molecule](https://molecule.readthedocs.io/) with [Docker](https://www.docker.com/) as driver. Pipenv 2018.11.26 and Python 3 recommended.
+For testing purposes, [Molecule](https://molecule.readthedocs.io/) with [Docker](https://www.docker.com/) as driver. Pipenv >=2018.11.26 and Python 3 recommended.
 
 ### Installing
 
@@ -35,7 +35,7 @@ Create or add to your roles dependency file (e.g requirements.yml) from GitHub:
 ```
 - src: http://github.com/idealista/prom2teams_role.git
   scm: git
-  version: 2.4.0
+  version: 3.0.0
   name: prom2teams
 ```
 
@@ -43,7 +43,7 @@ or using [Ansible Galaxy](https://galaxy.ansible.com/idealista/prom2teams_role/)
 
 ```
 - src: idealista.prom2teams_role
-  version: 2.4.0
+  version: 3.0.0
   name: prom2teams
 ```
 
@@ -86,7 +86,7 @@ See `molecule.yml` to check possible testing platforms.
 
 ## Built With
 
-![Ansible](https://img.shields.io/badge/ansible-2.9.2.0-green.svg)
+![Ansible](https://img.shields.io/badge/ansible-4.8.0-green.svg)
 
 ## Versioning
 
