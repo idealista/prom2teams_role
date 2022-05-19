@@ -27,3 +27,10 @@ Field: {{ prom2teams_groupalertsby }}
 [Labels]
 Excluded: {{ prom2teams_ignored_extra_labels|join(', ') }}
 {% endif %}
+
+{% if prom2teams_teams_client_config is defined %}
+[Teams Client]
+{% for config in prom2teams_teams_client_config %}
+{{ config.key }}: {{ config.value }}
+{% endfor %}
+{% endif %}

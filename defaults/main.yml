@@ -62,3 +62,10 @@ prom2teams_logrotate_template_path: templates/logrotate.j2 # This picks the one 
 #prom2teams_webhook_urls:
 #  connector1: http://test
 #  connector2: http://test2
+
+## Teams Client config
+#prom2teams_teams_client_config:
+#  - { key: RequestTimeout, value: 30 }
+#  - { key: RetryEnable, value: false }
+#  - { key: RetryWaitTime, value: 60 }
+#  - { key: MaxPayload, value: 24 }
