@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/) and [Keep a ch
 
 ## [Unreleased](https://github.com/idealista/prom2teams_role/tree/develop)
 
+## [3.1.0](https://github.com/idealista/prom2teams_role/tree/3.1.0)
 ### Added
 - *[#39](https://github.com/idealista/prom2teams_role/issues/39) Teams client configuration* @blalop
 ### Changed
