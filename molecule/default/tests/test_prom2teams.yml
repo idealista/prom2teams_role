@@ -14,6 +14,13 @@ file:
     group: {{ prom2teams_group }}
     exists: true
     filetype: directory
+  {{ prom2teams_config_folder }}/prom2teams.ini:
+    owner: {{ prom2teams_user }}
+    group: {{ prom2teams_group }}
+    exists: true
+    filetype: file
+    contains:
+    - "RequestTimeout: 30"
   {{ prom2teams_logs_folder }}:
     owner: {{ prom2teams_user }}
     group: {{ prom2teams_group }}
