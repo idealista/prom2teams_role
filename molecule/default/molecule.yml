@@ -10,7 +10,7 @@ platforms:
   - name: prom2teams
     groups:
       - prom2teams
-    image: ${DOCKER_BASE_IMAGE:-debian:buster-slim}
+    image: ${DOCKER_BASE_IMAGE:-debian:bullseye-slim}
     privileged: false
     capabilities:
       - SYS_ADMIN
@@ -23,8 +23,5 @@ platforms:
     stop_signal: 'RTMIN+3'
 provisioner:
   name: ansible
-scenario:
-  name: default
 verifier:
   name: ansible
-  directory: ./tests

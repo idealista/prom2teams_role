@@ -10,8 +10,8 @@ install:
   - pipenv sync
 env:
   jobs:
-    - DOCKER_BASE_IMAGE=debian:stretch-slim
     - DOCKER_BASE_IMAGE=debian:buster-slim
+    - DOCKER_BASE_IMAGE=debian:bullseye-slim
 script:
   - export DOCKER_BASE_IMAGE=${DOCKER_BASE_IMAGE}
   - pipenv run molecule test
